@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(233, 223, 133);
+    }
+    header,
+    article,
+    footer {
+        border: 1px solid #000;
+        box-sizing: border-box;
+    }
+    img {
+        max-width:100%;
+        height:auto;
+        background-position: center;
+    }
+    /* 導航欄樣式 */
+    .navbar {
+        background-color: #000000;
+        overflow: hidden;
+    }
+    .navbar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    @media screen and (max-width: 900px) {
+        body {
+            background-color:  rgb(233, 223, 133);
+        }
+        img {
+            max-width:80%;
+            height:400;
+            width:auto;
+            background-position: center;
+        }
+        .navbar a {
+            float: none;
+            display: flex;
+            text-align: left;
+        }
+        .card {
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        img {
+            width: 200px;
+        }
+        .card {
+            width: calc(100% - 20px);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div id="container">
+    <div id="header">
+    <header class="header">
+        <h1>舊市羊肉介紹</h1>
+        <p>B10856056 蔡曜鍏</p>
+    </header>
+    </div>
+    <!-- 導航欄 -->
+    <div class="navbar">
+        <a class="nav-link" href="首頁.html">首頁</a>
+        <a class="nav-link" href="介紹.html">店家相關資料</a>
+        <a class="nav-link" href="菜色.html">產品</a>
+        <a href="https://www.facebook.com/Joes.com.tw/?locale=zh_TW">聯絡我們</a>
+    </div>
+    <!-- 網站內容本體 -->
+    <article>
+        <img src="images/47690266_2018821_465770.jpg" />
+        <h2>簡介</h2>
+        <p>岡山是知名羊肉產區，本店創立於1955 年，老闆早年經營於岡山舊菜市場，搬遷至現址更名為岡山舊市羊肉，現時仍每天採買羊隻，並於現場切割。招牌菜為溫潤滋補的當歸羊肉爐和各式羊肉熱炒等～</p>
+        <h3>更多內容</h3>
+        <p>地址：高雄市岡山區河華路111號</p>
+        <p>電話：07 625 8151</p>
+        <p>外送：無</p>
+        <p>營業時間：11:00–20:30</p>
+        <p>粉絲團：<a href="https://www.facebook.com/Joes.com.tw/?locale=zh_TW">岡山舊市羊肉</a></p>
+    <div class="content">
+        <div>
+            <h2>店面位址</h2>
+        </div>
+        <div class="iframe-rwd">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d235398.8096251566!2d120.02042392499999!3d22.798521!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e0c25a3101f4b%3A0xb9e56ab2d599c1f3!2z6IiK5biC576K6IKJ!5e0!3m2!1szh-TW!2stw!4v1685704740104!5m2!1szh-TW!2stw" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </div>
+    </article>
+</div>
+</body>
+</html>

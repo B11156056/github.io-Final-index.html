@@ -1,0 +1,90 @@
+html,body{margin:0;padding:0}
+body{font: 76% arial,sans-serif;text-align:center}
+p{margin:0 10px 10px}
+a{padding:5px; text-decoration:none; color:#000000;}
+div#header{background-color:#F3F2ED;}
+div#header h1{height:80px;line-height:80px;margin:0;padding-left:10px;}
+div#container{text-align:left}
+div#content p{line-height:1.4}
+div#navigation{background:#F6F0E0;}
+div#navigation ul{margin:15px 0; padding:0; list-style-type:none;}
+div#navigation li{margin-bottom:5px;}
+div#extra{background:#CCC8B3;}
+div#footer{background:#BFBD93;}
+div#footer p{margin:0;padding:5px 10px}
+div#container{width:700px;margin:0 auto}
+div#content{float:right;width:500px}
+div#navigation{float:left;width:200px}
+div#extra{float:left;clear:left;width:200px}
+div#footer{clear:both;width:100%}
+div#alink{color:#3f94c5;}
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: rgb(233, 223, 133);
+    }
+    header,
+    article,
+    footer {
+        border: 1px solid #000;
+        box-sizing: border-box;
+    }
+    img {
+        max-width:100%;
+        height:auto;
+        background-position: center;
+    }
+    content {
+        background-color: #000;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: right;
+        padding: full;
+    }
+    .navbar {
+        background-color: #000000;
+        overflow: hidden;
+    }
+    .navbar a {
+        float: left;
+        color: #f2f2f2;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+    .card {
+        border-radius: 10px;
+        margin: 10px;
+        box-shadow: 0 10px rgba(0, 0, 0, 0.2);
+        padding: 20px;
+        text-align: center;
+    }
+        @media screen and (max-width: 900px) {
+        body {
+            background-color:  rgb(233, 223, 133);
+        }
+        img {
+            max-width:80%;
+            height:400;
+            width:auto;
+            background-position: center;
+        }
+        .navbar a {
+            float: none;
+            display: flex;
+            text-align: left;
+        }
+        .card {
+            text-align: center;
+        }
+    }
+    @media screen and (max-width: 600px) {
+        img {
+            width: 200px;
+        }
+        .card {
+            width: calc(100% - 20px);
+        }
+    }
